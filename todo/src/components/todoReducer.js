@@ -17,7 +17,7 @@ export const todoReducer = (state, action) => {
         return v
       })}
     case 'REMOVE_COMPLETE':
-      return {...state, todos: state.todos.filter(v => !v.completed)}
+      return {...state, todos: state.todos.filter(v => v.completed)}
     case 'CHANGE_TODO_TEXT':
       return {...state, inputText: action.text}
     default:

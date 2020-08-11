@@ -14,7 +14,6 @@ const TodoForm = props => {
       <button onClick={e => {
         e.preventDefault()
         props.dispatch({type: 'ADD_TODO'})
-        document.querySelector('#todoInput').setAttribute('value','')
       }}>Add</button>
       <button onClick={e => {
         e.preventDefault()
